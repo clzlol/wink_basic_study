@@ -53,6 +53,7 @@ insertform.addEventListener("submit", (event) => {
 
   newCheckCircle.innerText = "V";
   newText.innerText = input.value;
+  newText.style.textDecoration = "none";
   newRemove.innerText = "del";
 
   //todo 체크
@@ -76,7 +77,9 @@ insertform.addEventListener("submit", (event) => {
   //todo 삭제
   newRemove.addEventListener("click", () => {
     newRemove.parentElement.remove();
-    nLeft--;
+    if (newRemove.previousElementSibling.style.textDecoration == "none") {
+      nLeft--;
+    }
     left();
   })
 
