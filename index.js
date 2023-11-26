@@ -88,4 +88,4 @@ insertform.addEventListener("submit", (event) => {
   circleButton.click();
   nLeft++;
   left();
-})
+});
