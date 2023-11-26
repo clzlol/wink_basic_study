@@ -38,7 +38,8 @@ circleButton.addEventListener("click", () => {
 })
 
 //todo 추가 기능
-insertform.addEventListener("submit", () => {
+insertform.addEventListener("submit", (event) => {
+  event.preventDefault();
   const newTodoItem = document.createElement('div');
   const newCheckCircle = document.createElement('div');
   const newText = document.createElement('div');
