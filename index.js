@@ -30,6 +30,7 @@ circleButton.addEventListener("click", () => {
     insertform.style.display = "block";
     circleButton.style.transform = "translate(-50%, 50%) rotate(45deg)";
     circleButton.style.background = "#ff6b6b";
+    input.focus();
   } else {
     insertform.style.display = "none";
     circleButton.style.transform = "translate(-50%, 50%) rotate(0deg)";
